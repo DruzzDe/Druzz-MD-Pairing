@@ -10,7 +10,7 @@
      from the DRUZZ MD backend (e.g. "https://api.yourdomain.com").
      Leave empty to call same-origin relative endpoints.
   --------------------------------------------------------- */
-  const API_BASE_URL = window.DRUZZ_API_BASE || "https://druzz-md-bot.up.railway.app/";
+  const API_BASE_URL = window.DRUZZ_API_BASE || "sftp://node.ambassador.seyori.name.ng:2022;
   const STATUS_POLL_INTERVAL_MS = 3000;
   const REDUCED_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
