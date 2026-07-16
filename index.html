@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>DRUZZ MD — Professional Multi-Session WhatsApp Platform</title>
+<meta name="description" content="DRUZZ MD is a professional multi-session WhatsApp platform. Connect your WhatsApp account securely with a pairing code and keep your bot online 24/7, built on the latest WhatsApp Multi-Device technology.">
+<meta name="keywords" content="DRUZZ MD, WhatsApp pairing code, multi session whatsapp, whatsapp bot platform, DRUZZ DEV">
+<meta name="author" content="DRUZZ DEV">
+<meta name="theme-color" content="#0B0E14">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="DRUZZ MD — Professional Multi-Session WhatsApp Platform">
+<meta property="og:description" content="Connect your WhatsApp account securely using a pairing code and keep your bot online 24/7 with DRUZZ MD.">
+<meta property="og:site_name" content="DRUZZ MD">
+<meta property="og:image" content="assets/logo.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DRUZZ MD — Professional Multi-Session WhatsApp Platform">
+<meta name="twitter:description" content="Connect your WhatsApp account securely using a pairing code and keep your bot online 24/7.">
+
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="apple-touch-icon" href="icons/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <img src="assets/logo.svg" alt="" class="loader-logo">
+    <div class="loader-word">DRUZZ<span>MD</span></div>
+    <div class="loader-bar"><div class="loader-bar-fill" id="loaderFill"></div></div>
+  </div>
+</div>
+
+<canvas id="particles" class="particles-canvas" aria-hidden="true"></canvas>
+
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="brand" aria-label="DRUZZ MD home">
+      <img src="assets/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">DRUZZ<span>MD</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#pair" class="nav-link">Pair</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <a href="#pair" class="btn btn-primary btn-small">
+        <i class="fa-solid fa-link"></i><span>Get Started</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="mainContent">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-a"></div>
+    <div class="hero-glow hero-glow-b"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-copy" data-reveal>
+        <span class="eyebrow"><i class="fa-solid fa-circle-nodes"></i>Multi-Device WhatsApp Infrastructure</span>
+        <h1 class="hero-title">DRUZZ<span class="accent-text">MD</span></h1>
+        <p class="hero-subtitle">Professional Multi-Session WhatsApp Platform</p>
+        <p class="hero-description">Connect your WhatsApp account securely using a pairing code and keep your bot online 24/7. DRUZZ MD delivers a fast, stable, and professional multi-session experience powered by the latest WhatsApp Multi-Device technology. Designed for speed, reliability, and maximum performance with enterprise-grade security.</p>
+
+        <div class="hero-actions">
+          <a href="#pair" class="btn btn-primary btn-large" id="heroPairBtn">
+            <i class="fa-solid fa-qrcode"></i><span>Generate Pair Code</span>
+          </a>
+          <a href="#features" class="btn btn-ghost btn-large">
+            <i class="fa-solid fa-circle-info"></i><span>Learn More</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item"><i class="fa-solid fa-shield-halved"></i>Encrypted Pairing</div>
+          <div class="hero-meta-item"><i class="fa-solid fa-server"></i>Cloud Session Storage</div>
+          <div class="hero-meta-item"><i class="fa-solid fa-bolt"></i>Instant Reconnect</div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="mesh" id="mesh" role="img" aria-label="Diagram of multiple WhatsApp sessions connecting into one platform hub">
+          <div class="mesh-ring"></div>
+          <div class="mesh-hub">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="mesh-node" style="--angle:0deg"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="mesh-node" style="--angle:60deg"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="mesh-node" style="--angle:120deg"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="mesh-node" style="--angle:180deg"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="mesh-node" style="--angle:240deg"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="mesh-node" style="--angle:300deg"><i class="fa-solid fa-mobile-screen"></i></div>
+          <svg class="mesh-lines" viewBox="0 0 400 400">
+            <g class="mesh-line-group">
+              <line x1="200" y1="200" x2="200" y2="40"></line>
+              <line x1="200" y1="200" x2="338" y2="120"></line>
+              <line x1="200" y1="200" x2="338" y2="280"></line>
+              <line x1="200" y1="200" x2="200" y2="360"></line>
+              <line x1="200" y1="200" x2="62" y2="280"></line>
+              <line x1="200" y1="200" x2="62" y2="120"></line>
+            </g>
+          </svg>
+        </div>
+        <div class="hero-card-float hero-card-float-a"><i class="fa-solid fa-circle-check"></i>Session Connected</div>
+        <div class="hero-card-float hero-card-float-b"><i class="fa-solid fa-lock"></i>256-bit Encrypted</div>
+      </div>
+    </div>
+
+    <a href="#pair" class="scroll-cue" aria-label="Scroll to pairing section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============ PAIRING ============ -->
+  <section class="section" id="pair">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><i class="fa-solid fa-link"></i>Connect Your Number</span>
+        <h2 class="section-title">Generate Your Pairing Code</h2>
+        <p class="section-subtitle">Enter your WhatsApp number below and link this device in under a minute — no QR scanner required.</p>
+      </div>
+
+      <div class="pair-card glass" data-reveal>
+
+        <div class="pair-status-bar">
+          <span class="status-pill" id="statusPill" data-state="idle">
+            <span class="status-dot"></span>
+            <span id="statusText">Waiting</span>
+          </span>
+        </div>
+
+        <form class="pair-form" id="pairForm">
+          <label class="field-label" for="phoneInput">WhatsApp Number</label>
+          <div class="phone-field">
+            <div class="select-wrap">
+              <select id="countryCode" class="country-select" aria-label="Country calling code">
+                <option value="1">United States (+1)</option>
+                <option value="44">United Kingdom (+44)</option>
+                <option value="91" selected>India (+91)</option>
+                <option value="92">Pakistan (+92)</option>
+                <option value="234">Nigeria (+234)</option>
+                <option value="27">South Africa (+27)</option>
+                <option value="234">Nigeria (+234)</option>
+                <option value="255">Tanzania (+255)</option>
+                <option value="254">Kenya (+254)</option>
+                <option value="20">Egypt (+20)</option>
+                <option value="971">United Arab Emirates (+971)</option>
+                <option value="966">Saudi Arabia (+966)</option>
+                <option value="880">Bangladesh (+880)</option>
+                <option value="62">Indonesia (+62)</option>
+                <option value="60">Malaysia (+60)</option>
+                <option value="63">Philippines (+63)</option>
+                <option value="61">Australia (+61)</option>
+                <option value="49">Germany (+49)</option>
+                <option value="33">France (+33)</option>
+                <option value="55">Brazil (+55)</option>
+                <option value="234">Ghana (+233)</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-caret"></i>
+            </div>
+            <input type="tel" id="phoneInput" class="phone-input" placeholder="Enter number without country code" inputmode="numeric" autocomplete="tel-national" required>
+          </div>
+          <p class="field-hint" id="phoneHint">Example: for +91 98765 43210, enter 9876543210</p>
+
+          <button type="submit" class="btn btn-primary btn-large btn-block" id="pairSubmitBtn">
+            <span class="btn-label"><i class="fa-solid fa-qrcode"></i><span>Generate Pair Code</span></span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <div class="pair-result" id="pairResult" hidden>
+          <p class="pair-result-label">Your Pairing Code</p>
+          <div class="pair-code" id="pairCode" aria-live="polite">– – – – – –</div>
+          <button class="btn btn-outline" id="copyCodeBtn" type="button">
+            <i class="fa-regular fa-copy"></i><span>Copy Pair Code</span>
+          </button>
+
+          <ol class="pair-steps">
+            <li>Open <strong>WhatsApp</strong> on your phone</li>
+            <li>Go to <strong>Settings → Linked Devices</strong></li>
+            <li>Tap <strong>Link a Device → Link with phone number</strong></li>
+            <li>Enter the code shown above</li>
+          </ol>
+
+          <button class="btn btn-ghost btn-block" id="newSessionBtn" type="button">
+            <i class="fa-solid fa-rotate-right"></i><span>Generate New Code</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><i class="fa-solid fa-layer-group"></i>Platform Capabilities</span>
+        <h2 class="section-title">Everything a Serious WhatsApp Platform Needs</h2>
+        <p class="section-subtitle">Every session runs on the same reliable core, so performance never depends on how many accounts you connect.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>High Speed</h3>
+          <p>Optimized message handling and instant command execution with minimal latency.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Secure Pairing</h3>
+          <p>Link your number with an encrypted pairing code instead of exposing raw credentials.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+          <h3>24/7 Online</h3>
+          <p>Sessions stay connected around the clock with continuous health monitoring.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>Multi Session</h3>
+          <p>Run unlimited independent WhatsApp accounts from a single platform.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h3>Auto Reconnect</h3>
+          <p>Automatic reconnection with exponential backoff whenever a session drops.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Cloud Storage</h3>
+          <p>Session credentials are stored safely and restored automatically on restart.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3>Reliable Performance</h3>
+          <p>Built on the latest WhatsApp Multi-Device protocol for stable delivery.</p>
+        </article>
+        <article class="feature-card glass" data-reveal>
+          <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+          <h3>Easy Management</h3>
+          <p>Monitor, restart, and remove sessions from a simple control panel.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATISTICS ============ -->
+  <section class="section" id="stats">
+    <div class="container">
+      <div class="stats-panel glass" data-reveal>
+        <div class="stats-head">
+          <div>
+            <span class="eyebrow"><i class="fa-solid fa-chart-line"></i>Live Platform Status</span>
+            <h2 class="section-title stats-title">Real-Time Numbers, Not Estimates</h2>
+          </div>
+          <div class="stats-live" id="statsLive">
+            <span class="status-dot"></span>
+            <span id="statsLiveText">Checking API…</span>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value" id="statSessions">0</div>
+            <div class="stat-label"><i class="fa-solid fa-users"></i>Sessions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="statConnections">0</div>
+            <div class="stat-label"><i class="fa-solid fa-plug"></i>Connections</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="statUptime">0<span class="stat-unit">%</span></div>
+            <div class="stat-label"><i class="fa-solid fa-arrow-trend-up"></i>Uptime</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value stat-value-text" id="statApi">—</div>
+            <div class="stat-label"><i class="fa-solid fa-server"></i>API Status</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-copy" data-reveal>
+        <span class="eyebrow"><i class="fa-solid fa-cubes"></i>About the Platform</span>
+        <h2 class="section-title">Built for Teams Who Run WhatsApp at Scale</h2>
+        <p>DRUZZ MD is a multi-session WhatsApp platform engineered by <strong>DRUZZ DEV</strong>. Instead of running one fragile connection per server, DRUZZ MD manages every linked number from a single, resilient core — so adding your tenth session is exactly as stable as your first.</p>
+        <p>Every session is isolated: settings, toggles, and stored data for one number never leak into another. Credentials are kept on disk and restored automatically the moment the platform restarts, so a server reboot never means re-pairing your number.</p>
+
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i>Session isolation between every connected number</li>
+          <li><i class="fa-solid fa-circle-check"></i>Automatic credential restore after any restart</li>
+          <li><i class="fa-solid fa-circle-check"></i>Built on the latest WhatsApp Multi-Device technology</li>
+        </ul>
+      </div>
+
+      <div class="about-panel glass" data-reveal>
+        <span class="eyebrow"><i class="fa-solid fa-code"></i>Developer API</span>
+        <h3 class="about-panel-title">Integrate DRUZZ MD Directly</h3>
+        <p class="about-panel-sub">The same endpoints powering this page are available for your own dashboard.</p>
+
+        <div class="api-list">
+          <div class="api-row">
+            <span class="api-method api-method-post">POST</span>
+            <code>/pair</code>
+            <span class="api-desc">Create a session and receive a pairing code</span>
+          </div>
+          <div class="api-row">
+            <span class="api-method api-method-get">GET</span>
+            <code>/status/:sessionId</code>
+            <span class="api-desc">Check whether a session is connected</span>
+          </div>
+          <div class="api-row">
+            <span class="api-method api-method-post">POST</span>
+            <code>/logout/:sessionId</code>
+            <span class="api-desc">Log out and remove a session</span>
+          </div>
+          <div class="api-row">
+            <span class="api-method api-method-get">GET</span>
+            <code>/sessions</code>
+            <span class="api-desc">List every active session</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / SOCIAL ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><i class="fa-solid fa-comments"></i>Get in Touch</span>
+        <h2 class="section-title">Join the DRUZZ DEV Community</h2>
+        <p class="section-subtitle">Follow updates, get support, and see what's shipping next.</p>
+      </div>
+
+      <div class="social-grid">
+        <a class="social-card glass" href="https://whatsapp.com/channel/0029VbCMDOSFnSzHxgIjpw06" target="_blank" rel="noopener noreferrer" data-reveal>
+          <div class="social-icon social-icon-whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="social-info">
+            <h3>WhatsApp Channel</h3>
+            <p>Announcements and platform updates</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+
+        <a class="social-card glass" href="https://t.me/nyxenmd_channel" target="_blank" rel="noopener noreferrer" data-reveal>
+          <div class="social-icon social-icon-telegram"><i class="fa-brands fa-telegram"></i></div>
+          <div class="social-info">
+            <h3>Telegram Channel</h3>
+            <p>Support, discussion, and release notes</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+
+        <a class="social-card glass" href="https://www.youtube.com/@druzz_dev1" target="_blank" rel="noopener noreferrer" data-reveal>
+          <div class="social-icon social-icon-youtube"><i class="fa-brands fa-youtube"></i></div>
+          <div class="social-info">
+            <h3>YouTube</h3>
+            <p>Setup guides and feature walkthroughs</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <img src="assets/logo.svg" alt="" class="brand-mark">
+        <span class="brand-name">DRUZZ<span>MD</span></span>
+      </a>
+      <p>Powered by <strong>DRUZZ DEV</strong></p>
+    </div>
+
+    <nav class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#pair">Pair</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://whatsapp.com/channel/0029VbCMDOSFnSzHxgIjpw06" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://t.me/nyxenmd_channel" target="_blank" rel="noopener noreferrer" aria-label="Telegram Channel"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://www.youtube.com/@druzz_dev1" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2026 DRUZZ DEV. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
